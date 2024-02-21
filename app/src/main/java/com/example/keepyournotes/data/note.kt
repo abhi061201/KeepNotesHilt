@@ -10,13 +10,13 @@ import java.time.LocalDateTime
 import java.util.Date
 import java.util.UUID
 
-@Entity
+@Entity(tableName = "NoteTable")
 data class note(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
 
-    val title: String,
+    val title: String= "",
 
-    val description: String,
+    val description: String="",
 
     )

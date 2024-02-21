@@ -41,7 +41,7 @@ import com.example.keepyournotes.data.note
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-@RequiresApi(Build.VERSION_CODES.O)
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun NoteScreen(
@@ -123,7 +123,7 @@ fun NoteScreen(
 
 }
 
-@RequiresApi(Build.VERSION_CODES.O)
+
 @Preview(showBackground = true)
 @Composable
 fun noteScreenPreview() {
@@ -134,7 +134,6 @@ fun noteScreenPreview() {
     )
 }
 
-@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun NoteItem(
     note: note,

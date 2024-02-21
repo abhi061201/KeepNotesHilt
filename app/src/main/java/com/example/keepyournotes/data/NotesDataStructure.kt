@@ -5,7 +5,7 @@ import androidx.annotation.RequiresApi
 
 class NotesDataStructure {
     companion object{
-        @RequiresApi(Build.VERSION_CODES.O)
+
         var notes  = listOf<note>(
 
             note(

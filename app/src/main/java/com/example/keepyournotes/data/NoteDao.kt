@@ -9,9 +9,9 @@ import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 
 @Dao
-interface NoteDao {
+interface NoteDao{
 
-    @Query("Select * from note")
+    @Query("Select * from NoteTable")
      fun getNotes(): Flow<List<note>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
@@ -20,10 +20,10 @@ interface NoteDao {
     @Delete
    suspend fun deleteNote(note: note)
 
-    @Query("Select * from note where id=:uid")
-   suspend fun getNoteById(uid: String)
+//    @Query("Select * from note where id=:uid")
+//   suspend fun getNoteById(uid: Int)
 
-    @Query("Delete from note")
+    @Query("Delete from NoteTable")
    suspend fun deleteAll()
 
 

@@ -44,6 +44,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun NotesScreen(notesViewModel: NotesViewModel= viewModel()) {
     val notes = notesViewModel.getAllNotes()
+
     NoteScreen(
 
         notes = notes,
